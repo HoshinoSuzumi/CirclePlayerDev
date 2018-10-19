@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPlayer", "MyPlayer\MyPlayer.csproj", "{C3B58A04-7D84-4F24-A266-335EC162FB5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		DVD-5|Any CPU = DVD-5|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SingleImage|Any CPU = SingleImage|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3B58A04-7D84-4F24-A266-335EC162FB5D}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{C3B58A04-7D84-4F24-A266-335EC162FB5D}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{C3B58A04-7D84-4F24-A266-335EC162FB5D}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{C3B58A04-7D84-4F24-A266-335EC162FB5D}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{C3B58A04-7D84-4F24-A266-335EC162FB5D}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3B58A04-7D84-4F24-A266-335EC162FB5D}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{C3B58A04-7D84-4F24-A266-335EC162FB5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3B58A04-7D84-4F24-A266-335EC162FB5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3B58A04-7D84-4F24-A266-335EC162FB5D}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{C3B58A04-7D84-4F24-A266-335EC162FB5D}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
