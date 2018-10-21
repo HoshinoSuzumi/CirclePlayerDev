@@ -14,7 +14,7 @@ namespace MyPlayer
         }
 
         public static String APPNAME = " Circle Player ";
-        public static String VERSION = " 2.1.0a ";
+        public static String VERSION = " 2.1.1a ";
         public static String BRANCH = " Release ";
 
 

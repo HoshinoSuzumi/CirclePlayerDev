@@ -220,8 +220,13 @@ namespace MyPlayer
         }
         public void MinWindow(object sender, RoutedEventArgs args)
         {
-            showTips(1,"Circle Player 隐藏到这里啦!","随时恭候 Master 回来");
+            showTips(1, "Circle Player 隐藏到这里啦!", "随时恭候 Master 回来");
             this.Hide();
+        }
+        public void InfoWindow(object sender, RoutedEventArgs args)
+        {
+            mContentControl.Content = new InfoPage();
+            //MessageBox.Show(Utils.APPNAME + "\n版本号：" + Utils.VERSION + "\n分支：" + Utils.BRANCH);
         }
         public void time_Tick(object sender, EventArgs e)
         {
@@ -232,7 +237,7 @@ namespace MyPlayer
             catch (InvalidOperationException err)
             {
                 MessageBox.Show("[DEBUG]捕捉到非致命异常（您仍然可以继续操作）");
-                showTips(2, "Circle Player 遇到了异常", "尽管这可能不影响使用，但可能会影响用户体验。烦请您将情况反馈给我们!");
+                showTips(2, "Circle Player 遇到了异常", "尽管这可能不影响使用，但可能会影响用户体验。烦请您将详细情况反馈给我们!");
                 progress_bar.Maximum = ((int)player.NaturalDuration.TimeSpan.TotalSeconds); //总时长
             }
             progress_bar.Value = (player.Position.Ticks / 10000000);
@@ -285,6 +290,11 @@ namespace MyPlayer
             openLink("https://github.com/boxlab/CirclePlayer/issues");
             showTips(1,"Circle Player 反馈","正在启动浏览器前往圆心播放器 Github Issues");
             //MessageBox.Show("暂未开放");
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

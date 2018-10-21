@@ -32,7 +32,7 @@ namespace MyPlayer
                 download win = new download();
                 //MessageBox.Show(mArgs.ToArray()[0] + "  &&  " + e.Args.ToArray()[1]);
                 download.DOWN_URL = mArgs.ToArray()[2];
-                download.MUSIC_NAME = mArgs.ToArray()[3];
+                download.MUSIC_NAME = System.Web.HttpUtility.UrlDecode(mArgs.ToArray()[3]);
                 //StartupUri = new Uri("download.xaml", UriKind.Relative);
                 win.Show();
                 win.Download();

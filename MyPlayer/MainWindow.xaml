@@ -41,13 +41,13 @@
                 </Setter.Value>
             </Setter>
         </Style>
-        <Style x:Key="WebButton" TargetType="{x:Type Button}">
+        <Style x:Key="InfoButton" TargetType="{x:Type Button}">
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Button}">
                         <Grid>
                             <Label Cursor="Hand" Foreground="Black">
-                                <Run Text="CirclePlayer"/>
+                                <Run Text="关于"/>
                             </Label>
                         </Grid>
                     </ControlTemplate>
@@ -65,8 +65,9 @@
         <Button x:Name="btn_play" Content="播放" Margin="260,330,260,30" Height="Auto" Click="Button_Click_2"></Button>
         <Button Content="反馈" Margin="160,335,375,35" Height="Auto" Click="Button_Click_3"></Button>
         <Button Content="设置" Margin="375,335,160,35" Height="Auto" Click="Button_Click_1"></Button>
-        <Button Style="{DynamicResource ExitButton}" Content="退出应用" Click="CloseWindow" HorizontalAlignment="Center" Margin="528,10,10,0" VerticalAlignment="Top" Opacity="0.5" FontSize="10"/>
-        <Button Style="{DynamicResource MinButton}" Content="隐藏" Click="MinWindow" HorizontalAlignment="Center" Margin="499,10,71,0" VerticalAlignment="Top" Opacity="0.5" FontSize="10"/>
+        <Button Style="{DynamicResource ExitButton}" Content="退出应用" Click="CloseWindow" HorizontalAlignment="Center" Margin="530,10,10,0" VerticalAlignment="Top" Opacity="0.5" FontSize="10"/>
+        <Button Style="{DynamicResource MinButton}" Content="隐藏" Click="MinWindow" HorizontalAlignment="Center" Margin="495,10,71,0" VerticalAlignment="Top" Opacity="0.5" FontSize="10"/>
+        <Button Style="{DynamicResource InfoButton}" Content="关于" Click="InfoWindow" HorizontalAlignment="Center" Margin="460,10,106,0" VerticalAlignment="Top" Opacity="0.5" FontSize="10"/>
         <ListView x:Name="mlistView" HorizontalAlignment="Left" Height="245" Margin="30,37,0,0" VerticalAlignment="Top" Width="540" SelectionChanged="mlistView_SelectionChanged">
             <ListView.View>
                 <GridView>
