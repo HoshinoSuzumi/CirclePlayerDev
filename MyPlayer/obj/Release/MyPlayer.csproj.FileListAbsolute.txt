@@ -40,3 +40,27 @@ G:\C Sharp\MyPlayer\MyPlayer\obj\Release\MyPlayer.exe
 G:\C Sharp\MyPlayer\MyPlayer\obj\Release\MyPlayer.pdb
 G:\C Sharp\MyPlayer\MyPlayer\obj\Release\download.baml
 G:\C Sharp\MyPlayer\MyPlayer\obj\Release\download.g.cs
+F:\Github\CirclePlayerDev\MyPlayer\bin\Release\MyPlayer.exe.config
+F:\Github\CirclePlayerDev\MyPlayer\bin\Release\MyPlayer.exe
+F:\Github\CirclePlayerDev\MyPlayer\bin\Release\MyPlayer.pdb
+F:\Github\CirclePlayerDev\MyPlayer\bin\Release\MaterialDesignColors.dll
+F:\Github\CirclePlayerDev\MyPlayer\bin\Release\MaterialDesignThemes.Wpf.dll
+F:\Github\CirclePlayerDev\MyPlayer\bin\Release\MaterialDesignThemes.Wpf.pdb
+F:\Github\CirclePlayerDev\MyPlayer\bin\Release\MaterialDesignThemes.Wpf.xml
+F:\Github\CirclePlayerDev\MyPlayer\obj\Release\download.baml
+F:\Github\CirclePlayerDev\MyPlayer\obj\Release\InfoPage.baml
+F:\Github\CirclePlayerDev\MyPlayer\obj\Release\MainWindow.baml
+F:\Github\CirclePlayerDev\MyPlayer\obj\Release\SettingMediaPathWin.baml
+F:\Github\CirclePlayerDev\MyPlayer\obj\Release\App.baml
+F:\Github\CirclePlayerDev\MyPlayer\obj\Release\download.g.cs
+F:\Github\CirclePlayerDev\MyPlayer\obj\Release\InfoPage.g.cs
+F:\Github\CirclePlayerDev\MyPlayer\obj\Release\MainWindow.g.cs
+F:\Github\CirclePlayerDev\MyPlayer\obj\Release\SettingMediaPathWin.g.cs
+F:\Github\CirclePlayerDev\MyPlayer\obj\Release\App.g.cs
+F:\Github\CirclePlayerDev\MyPlayer\obj\Release\MyPlayer_MarkupCompile.cache
+F:\Github\CirclePlayerDev\MyPlayer\obj\Release\MyPlayer.g.resources
+F:\Github\CirclePlayerDev\MyPlayer\obj\Release\MyPlayer.Properties.Resources.resources
+F:\Github\CirclePlayerDev\MyPlayer\obj\Release\MyPlayer.csproj.GenerateResource.Cache
+F:\Github\CirclePlayerDev\MyPlayer\obj\Release\MyPlayer.exe
+F:\Github\CirclePlayerDev\MyPlayer\obj\Release\MyPlayer.pdb
+F:\Github\CirclePlayerDev\MyPlayer\obj\Release\MyPlayer.csprojResolveAssemblyReference.cache
