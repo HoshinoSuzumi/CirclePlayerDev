@@ -123,6 +123,10 @@ namespace MyPlayer
         }
 
         String temp_file;
+
+        public bool 测试1 { get => 测试; set => 测试 = value; }
+        public bool 测试2 { get => 测试; set => 测试 = value; }
+
         public void Play(String File)
         {
             timer.Stop();
