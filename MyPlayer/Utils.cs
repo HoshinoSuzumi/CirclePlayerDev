@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+#pragma warning disable CS0618 // 类型或成员已过时
 namespace MyPlayer
 {
     class Utils
@@ -20,7 +21,7 @@ namespace MyPlayer
 
         public static string getMediaPath()
         {
-            String callback = System.Configuration.ConfigurationSettings.AppSettings["MediaPath"];
+            string callback = System.Configuration.ConfigurationSettings.AppSettings["MediaPath"];
             if (callback != "")
                 return callback;
             else

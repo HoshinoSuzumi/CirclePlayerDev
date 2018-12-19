@@ -1,26 +1,16 @@
-﻿using System;
+﻿using MaterialDesignThemes.Wpf;
+using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Media;
-using System.Configuration;
 using System.Windows.Threading;
-using System.Drawing;
-using System.ServiceProcess;
 using Forms = System.Windows.Forms;
 using NotifyIcon = System.Windows.Forms.NotifyIcon;
 
+#pragma warning disable CS0618 // 类型或成员已过时
 namespace MyPlayer
 {
     /// <summary>
@@ -29,6 +19,7 @@ namespace MyPlayer
     public partial class MainWindow : Window
     {
         bool isPlaying = false;
+        public bool isSnack = true;
         MediaPlayer player = new MediaPlayer();
         DispatcherTimer timer = new DispatcherTimer();
 
@@ -36,8 +27,8 @@ namespace MyPlayer
 
         System.DateTime currentTime = System.DateTime.Now; 
 
-        WindowState ws;
-        WindowState wsl;
+        private WindowState ws;
+        private WindowState wsl;
         NotifyIcon notifyIcon;
 
 
@@ -52,7 +43,6 @@ namespace MyPlayer
             timer.Tick += new EventHandler(time_Tick);
             timer.Interval = TimeSpan.FromSeconds(1.0);
             var files = Directory.GetFiles(getMediaPath(), "*.mp3");
-
 
             foreach (var file in files)
             {
@@ -123,9 +113,7 @@ namespace MyPlayer
         }
 
         String temp_file;
-
-        public bool 测试1 { get => 测试; set => 测试 = value; }
-        public bool 测试2 { get => 测试; set => 测试 = value; }
+        
 
         public void Play(String File)
         {
@@ -181,7 +169,7 @@ namespace MyPlayer
                 isPlaying = true;
             }
         }
-
+        
         public void showTips(int type, String title, String text)
         {
             switch (type)
@@ -238,7 +226,7 @@ namespace MyPlayer
             {
                 progress_bar.Maximum = ((int)player.NaturalDuration.TimeSpan.TotalSeconds); //总时长
             }
-            catch (InvalidOperationException err)
+            catch
             {
                 MessageBox.Show("[DEBUG]捕捉到非致命异常（您仍然可以继续操作）");
                 showTips(2, "Circle Player 遇到了异常", "尽管这可能不影响使用，但可能会影响用户体验。烦请您将详细情况反馈给我们!");
@@ -296,9 +284,16 @@ namespace MyPlayer
             //MessageBox.Show("暂未开放");
         }
 
-        private void Button_Click_4(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            try
+            {
+                new SnackbarMessageQueue().Enqueue("Wow, easy!");
+            }
+            catch
+            {
+                MessageBox.Show("Error");
+            }
         }
     }
 }

@@ -56,7 +56,6 @@
         </Style>
     </Window.Resources>
     <Grid>
-        <ContentControl Name="mContentControl" Margin="0,0,0,0" Panel.ZIndex="99999" />
 
         <materialDesign:Card Padding="30" Margin="8" VerticalAlignment="Stretch"/>
         <materialDesign:Card Padding="30" Margin="30,35,30,0" VerticalAlignment="Top" Height="245"/>
@@ -83,5 +82,7 @@
         <Label Content="Version info" x:Name="VersionInfo" HorizontalAlignment="Center" Margin="0,0,0,8" VerticalAlignment="Bottom" Opacity="0.6" FontSize="10"/>
         <Slider x:Name="vol_bar" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="110" Margin="452,300,0,0" Opacity="0.8" MouseMove="vol_bar_MouseMove" Maximum="1" Value="1"/>
 
+        <materialDesign:Snackbar Margin="8" Message="Hello World" IsActive="{Binding IsActive}" />
+        <ContentControl Name="mContentControl" Margin="0,0,0,0" Panel.ZIndex="99999" />
     </Grid>
 </Window>
